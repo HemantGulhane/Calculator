@@ -1,0 +1,280 @@
+# CALCULATOR
+
+pi = 3.14
+
+i = 1
+while i <= 10:
+    symbol = input("\nEnter a symbol : ")
+    if symbol == "+":
+        one_plus = int(input("\nEnter 1st number : "))
+        two_plus = int(input("Enter 2nd number : "))
+        total_add = one_plus + two_plus
+        print(f"{one_plus} {symbol} {two_plus} = {total_add}")
+        i += 1
+
+    elif symbol == "+ by float":
+        one_plus = float(input("\nEnter 1st number : "))
+        two_plus = float(input("Enter 2nd number : "))
+        total_add = one_plus + two_plus
+        print(f"{one_plus} + {two_plus} = {total_add}")
+        i += 1
+
+    # MINUS
+
+    elif symbol == "-":
+        one_minus = int(input("\nEnter 1st number : "))
+        two_minus = int(input("Enter 2nd number : "))
+        total_minus = one_minus - two_minus
+        print(f"{one_minus} {symbol} {two_minus} = ", total_minus)
+        i += 1
+
+    elif symbol == "- by float":
+        one_minus = float(input("\nEnter 1st number : "))
+        two_minus = float(input("Enter 2nd number : "))
+        total_minus = one_minus - two_minus
+        print(f"{one_minus} - {two_minus} = {total_minus}")
+        i += 1
+
+    # MULTIPLY
+
+    elif symbol == "x":
+        one_x = int(input("\nEnter 1st number : "))
+        two_x = int(input("Enter 2nd number : "))
+        total_multiply = one_x * two_x
+        print(f"{one_x} {symbol} {two_x} = {total_multiply}")
+        i += 1
+
+    elif symbol == "x by float":
+        one_x = float(input("\nEnter 1st number : "))
+        two_x = float(input("Enter 2nd number : "))
+        total_multiply = one_x * two_x
+        print(f"{one_x} x {two_x} = {total_multiply}")
+        i += 1
+
+    # DIVIDE
+
+    elif symbol == "/":
+        one_divide = int(input("\nEnter 1st number : "))
+        two_divide = int(input("Enter 2nd number : "))
+        total_divide = one_divide / two_divide
+        print(f"{one_divide} {symbol} {two_divide} = {total_divide}")
+        i += 1
+
+    elif symbol == "/ by float":
+        one_divide = float(input("\nEnter 1st number : "))
+        two_divide = float(input("Enter 2nd number : "))
+        total_divide = one_divide / two_divide
+        print(f"{one_divide} / {two_divide} = {total_divide}")
+        i += 1
+
+    # POWER
+
+    elif symbol == "^":
+        one_power = int(input("\nEnter 1st number : "))
+        two_power = int(input("Enter 2nd number : "))
+        total_power = one_power ** two_power
+        print(f"{one_power} {symbol} {two_power} = {total_power}")
+        i += 1
+
+    elif symbol == "^ by float":
+        one_power = float(input("\nEnter 1st number : "))
+        two_power = float(input("Enter 2nd number : "))
+        total_power = one_power ** two_power
+        print(f"{one_power} ^ {two_power} = {total_power}")
+        i += 1
+
+    # PERCENT
+
+    elif symbol == "%":
+        one_p = int(input("\nEnter percent amount : "))
+        two_p = int(input("Enter 2nd number : "))
+        total_percent = two_p * one_p / 100
+        print(f"{one_p}{symbol} of {two_p} = {total_percent}")
+        i += 1
+
+    # SIMPLE INTEREST
+
+    elif symbol == "simple interest":
+        p = int(input("\nPlease enter principal(P) : "))
+        r = int(input("Please enter Rate of interest(R) : "))
+        n = int(input("Please enter Time Period(N) : "))
+        total_si = p * n * r / 100
+        total_amount = p + total_si
+        print(f"Your interest for {p} is {total_si} and amount is {total_amount}")
+        i += 1
+
+    # CIRCLE
+
+    elif symbol == "circumference":
+        cir = int(input("\nEnter radius : "))
+        circum = 2*pi*cir
+        print(f"Your circumference for radius {cir} is {circum}")
+        i += 1
+
+    elif symbol == "area of circle":
+        cir = int(input("\nEnter radius : "))
+        area = pi*cir*2
+        print(f"Area of circle is {area}")
+
+    # CYLINDER
+
+    elif symbol == "volume of cylinder":
+        cir = int(input("\nEnter radius : "))
+        hei_rect = int(input("Enter height : "))
+        vol = pi * cir ** 2 * hei_rect
+        print(f"Volume of cylinder is {vol}")
+
+    elif symbol == "csa of cylinder":
+        cir = int(input("\nEnter radius : "))
+        hei_rect = int(input("Enter height : "))
+        csa = 2 * pi * cir * hei_rect
+        print(f"CSA of cylinder is {csa}")
+
+    elif symbol == "tsa of cylinder":
+        cir = int(input("\nEnter radius : "))
+        hei_rect = int(input("Enter height : "))
+        tsa = 2 * pi * cir * hei_rect + cir
+        print(f"TSA of cylinder is {tsa}")
+
+    # SPHERE
+
+    elif symbol == "volume of sphere":
+        cir = int(input("\nEnter radius : "))
+        vol_sphere = 4/3 * pi * cir ** 3
+        print(f"Volume of sphere is {vol_sphere}")
+
+    elif symbol == "tsa of sphere":
+        pi = 3.14
+        cir = int(input("\nEnter radius : "))
+        tsa_sphere = 4 * pi * cir ** 2
+        print(f"TSA of sphere is {tsa_sphere}")
+
+    # HEMISPHERE
+
+    elif symbol == "volume of hemisphere":
+        cir = int(input("\nEnter radius : "))
+        vol_hemi = 2/3 * pi * cir ** 3
+        print(f"Volume of hemisphere is {vol_hemi}")
+
+    elif symbol == "csa of hemisphere":
+        cir = int(input("\nEnter radius : "))
+        csa_hemi = 2 * pi * cir ** 2
+        print(f"CSA of hemisphere is {csa_hemi}")
+
+    elif symbol == "tsa of hemisphere":
+        cir = int(input("\nEnter radius : "))
+        tsa_hemi = 3 * pi * cir ** 2
+        print(f"TSA of hemisphere is {tsa_hemi}")
+
+    # TRIANGLE
+
+    elif symbol == "area of triangle":
+        b_t = int(input("\nEnter base : "))
+        h_t = int(input("Enter height : "))
+        total_t = 1 / 2 * b_t * h_t
+        print(f"Area of triangle is {total_t}")
+        i += 1
+
+    # CUBE
+
+    elif symbol == "volume of cube":
+        l = int(input("Enter length : "))
+        vol_cube = l**3
+        print(f"Volume of cube is {vol_cube}")
+
+    elif symbol == "csa of cube":
+        l = int(input("Enter length : "))
+        csa_cube = 4 * l ** 2
+        print(f"CSA of cube is {csa_cube}")
+
+    elif symbol == "tsa of cube":
+        l = int(input("Enter length : "))
+        tsa_cube = 6 * l ** 2
+        print(f"TSA of cube is {tsa_cube}")
+
+    # SQUARE
+
+    elif symbol == "area of square":
+        l = int(input("Enter length : "))
+        area_square = l**2
+        print(f"Area of square is {area_square}")
+
+    elif symbol == "perimeter of square":
+        l = int(input("Enter length : "))
+        peri_square = l * 4
+        print(f"Perimeter of square is {peri_square}")
+
+    # RECTANGLE
+
+    elif symbol == "perimeter of rectangle":
+        cir = int(input("Enter length : "))
+        b = int(input("Enter breadth : "))
+        peri_rect = cir + b * 2
+        print(f"Perimeter of rectangle is {peri_rect}")
+
+    elif symbol == "area of rectangle":
+        cir = int(input("Enter length : "))
+        b = int(input("Enter breadth : "))
+        area_rect = cir * b
+        print(f"Area of rectangle is {area_rect}")
+        i += 1
+
+    # CUBOID
+
+    elif symbol == "volume of cuboid":
+        l = int(input("Enter length : "))
+        b = int(input("Enter breadth : "))
+        hei_rect = int(input("Enter height : "))
+        vol_rect = l * b * hei_rect
+        print(f"Volume of rectangle is {vol_rect}")
+
+    elif symbol == "csa of cuboid":
+        l = int(input("Enter length : "))
+        b = int(input("Enter breadth : "))
+        hei_rect = int(input("Enter height : "))
+        csa_cuboid = 2 * l + b * hei_rect
+        print(f"CSA of cuboid is {csa_cuboid}")
+
+    elif symbol == "tsa of cuboid":
+        l = int(input("Enter length : "))
+        b = int(input("Enter breadth : "))
+        hei_rect = int(input("Enter height : "))
+        tsa_cuboid = l*b + l*hei_rect + b*hei_rect * 2
+        print(f"TSA of cuboid is {tsa_cuboid}")
+
+    # CONE
+
+    elif symbol == "volume of cone":
+        cir = int(input("\nEnter radius : "))
+        hei_rect = int(input("Enter height : "))
+        vol_cone = 1/3 * pi * cir ** 2 * hei_rect
+        print(f"Volume of cone is {vol_cone}")
+
+    elif symbol == "csa of cone":
+        cir = int(input("\nEnter radius : "))
+        l = int(input("Enter length : "))
+        csa_cone = pi * cir * l
+        print(f"CSA of cone is {csa_cone}")
+
+    elif symbol == "tsa of cone":
+        cir = int(input("\nEnter radius : "))
+        l = int(input("Enter length : "))
+        tsa_cone = l + cir * cir * pi
+        print(f"TSA of cone is {tsa_cone}")
+
+    # CURRENCY
+
+    elif symbol == "convert to dollar from indian rupee":
+        dollar = int(input("\nEnter Indian Amount : "))
+        total_dollar = dollar / 76.10
+        print(f"{dollar} rupees are {total_dollar} dollars")
+        i += 1
+
+    elif symbol == "convert to indian rupee from dollar":
+        rupee_dollar = int(input("\nEnter Dollar Amount : "))
+        total_rupee_dollar = rupee_dollar * 76.10
+        print(f"{rupee_dollar} dollars are {total_rupee_dollar} rupees")
+        i += 1
+
+    else:
+        print(f"sorry, no symbol found as {symbol}")
